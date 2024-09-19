@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Longview Infrastructure</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
+      async
+    ></script>
+    <script src="js/main.js" type="text/javascript"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-TN5METVDYV"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-TN5METVDYV');
+    </script>
+  </head>
+  <body>
+    <a id="top"></a>
+    <header class="header">
+      <a href="#top" class="logo-link">
+        <img
+          src="/icons/logo_copy.jpg"
+          class="logo"
+          alt="Longview Logo"
+          width="300"
+          height="auto"
+        />
+      </a>
+      <nav class="header-right">
+        <a href="#transmission" class="nav-link">Transmission</a>
+        <a href="#regions" class="nav-link">Regions</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="landing-section" class="landing-section">
+        <img
+          src="images/Transmission_towers_sunrise.jpg"
+          alt="Workers at a transmission site"
+          class="lazyload fade-image"
+          width="1920"
+          height="1080"
+        />
+        <div class="landing-text">
+          <h2>BUILDING A RELIABLE, AFFORDABLE GRID</h2>
+          <p>
+            WE DEVELOP INFRASTRUCTURE THAT PROVIDES ELECTRICITY FOR
+            AMERICA&apos;S GROWING ECONOMY.
+          </p>
+        </div>
+      </section>
+
+      <section id="transmission" class="section-content">
+        <div class="text-content">
+          <h1>TRANSMISSION</h1>
+          <p>
+            Longview is a national developer of electric transmission. It has
+            decades of experience and a commitment to building a safe, reliable,
+            affordable grid.
+          </p>
+          <p>
+            Rising electricity demand and the need for renewable power
+            generation are driving a generational build-out of the transmission
+            system. Studies have found that competitive processes can stimulate
+            innovation and reduce cost of that infrastructure.
+          </p>
+        </div>
+        <img
+          src="images/Tower_field.jpg"
+          alt="Transmission tower in a field"
+          class="lazyload"
+          width="800"
+          height="600"
+        />
+      </section>
+
+      <section id="section-delimiter" class="section-delimiter">
+        <img
+          src="images/Transmission_towers_clouds.jpg"
+          alt="Transmission towers against clouds"
+          class="lazyload fade-image"
+          width="1920"
+          height="1080"
+        />
+      </section>
+
+      <section id="regions" class="section-content">
+        <img
+          src="images/RTO_ISO_Full_Map.jpg"
+          alt="Map of Longview's operational regions"
+          class="lazyload"
+          width="800"
+          height="600"
+        />
+        <div class="text-content">
+          <h2>REGIONS</h2>
+          <p>
+            Longview operates across multiple regions, ensuring a wide-reaching
+            and efficient transmission network.
+          </p>
+          <p>
+            Our strategic presence in key areas allows us to meet the diverse
+            energy needs of different communities and support the growth of
+            renewable energy sources.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <img
+          src="images/Workers.jpg"
+          alt="Transmission towers at sunrise"
+          class="lazyload background-image"
+          width="1920"
+          height="1080"
+        />
+        <div class="overlay"></div>
+        <div class="overlay-content">
+          <div class="contact-info">
+            <div class="contact-group">
+              <h2>Contact Us</h2>
+              <div id="contact-icon" onclick="showForm()">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Popup Modal Form -->
+      <div id="contactModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeForm()">&times;</span>
+          <div class="logo-container">
+            <img src="/icons/logo_copy.jpg" alt="Logo" class="logo" />
+          </div>
+          <form id="contactForm" action="/contact.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+      <!-- End Contact Section -->
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="copyright">
+          <p>&copy; 2024 Longview Infrastructure. All rights reserved.</p>
+        </div>
+        <div class="footer-logo-container">
+          <a href="#top" class="logo-link">
+            <img
+              src="/icons/logo_copy.jpg"
+              class="footer-logo"
+              alt="Longview Logo"
+            />
+          </a>
+        </div>
+        <div class="social-media-icons">
+          <a
+            href="https://www.linkedin.com"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <i
+            class="fa-solid fa-envelope"
+            onclick="showForm()"
+            aria-label="Email"
+          ></i>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
