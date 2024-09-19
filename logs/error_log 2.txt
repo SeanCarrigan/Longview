@@ -1,0 +1,11 @@
+[2024-09-17 17:51:15] Failed to send email: SMTP Error: Could not authenticate.SMTP server error: QUIT command failed
+[2024-09-17 17:54:57] Failed to send email: SMTP Error: Could not authenticate.SMTP server error: QUIT command failed
+[2024-09-17 17:56:07] Failed to send email: SMTP Error: Could not authenticate.SMTP server error: QUIT command failed
+[2024-09-17 17:56:54] Failed to send email: SMTP Error: Could not authenticate.SMTP server error: QUIT command failed
+[2024-09-17 17:57:57] Failed to send email: SMTP Error: Could not authenticate.SMTP server error: QUIT command failed
+[2024-09-17 17:58:39] Failed to send email: SMTP Error: Could not authenticate.SMTP server error: QUIT command failed
+[2024-09-17 17:59:15] Failed to send email: SMTP Error: Could not authenticate.SMTP server error: QUIT command failed
+[2024-09-17 17:59:58] Failed to send email: SMTP Error: Could not authenticate.SMTP server error: QUIT command failed
+[2024-09-17 18:04:25] Failed to send email: SMTP Error: Could not authenticate.SMTP server error: QUIT command failed
+[2024-09-17 18:04:59] Failed to send email: SMTP Error: Could not authenticate.SMTP server error: QUIT command failed
+[2024-09-17 18:06:11] Failed to send email: SMTP Error: Could not authenticate.SMTP server error: QUIT command failed
