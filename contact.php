@@ -55,7 +55,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             // Recipients
             $mail->setFrom('', 'TESTING'); // GoDaddy sender email (contact@domain)
+<<<<<<< HEAD
             $mail->addAddress('sean.t.carrigan@gmail.com'); // Add a recipient email address
+=======
+            $mail->addAddress(''); // Add a recipient email address
+>>>>>>> 39787bb94d7a00766e2bcc738714f6f91e275570
             $mail->addReplyTo($email, $name);
 
             // Content
