@@ -1,0 +1,137 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  position: fixed;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  /* background-image: url('/images/asfalt-dark.png'); */
+}
+
+.back-link {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #555;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-link:hover {
+  color: black;
+}
+
+.container {
+  min-width: 40vw;
+  max-width: 50vw;
+  margin: 1.5rem auto 2rem;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Form styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.required {
+  color: red;
+  font-weight: bold;
+}
+
+#disclaimer {
+  border-top: 1px solid #ccc;
+}
+
+label[for='disclaimer'] {
+  font-size: 1rem;
+  margin-top: 15px;
+}
+
+.disclaimer {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.file-disclaimer {
+  font-size: 0.75rem;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+textarea,
+select,
+input[type='file'] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #555;
+  outline: none;
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+button[type='submit'] {
+  background-color: #555;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+button[type='submit']:hover {
+  background-color: black;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  button[type='submit'] {
+    padding: 10px 15px;
+  }
+}

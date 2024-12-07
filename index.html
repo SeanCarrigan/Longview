@@ -19,6 +19,7 @@
       async
     ></script>
     <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/modal.js" type="text/javascript"></script>
 
     <!-- Google tag (gtag.js) -->
     <script
@@ -36,59 +37,99 @@
     </script>
   </head>
   <body>
-    <a id="top"></a>
     <header class="header">
-      <a href="#top" class="logo-link">
+      <a href="/" class="logo-link" aria-label="Back to homepage">
         <img
-          src="/icons/logo_copy.jpg"
-          class="logo"
+          src="/icons/logo_copy.png"
+          class="logo logo-black"
+          alt="Longview Logo"
+          width="300"
+          height="auto"
+        />
+        <img
+          src="/icons/logo_copy_white.png"
+          class="logo logo-white"
           alt="Longview Logo"
           width="300"
           height="auto"
         />
       </a>
+      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
       <nav class="header-right">
-        <a href="#transmission" class="nav-link">Transmission</a>
-        <a href="#regions" class="nav-link">Regions</a>
-        <a href="#contact" class="nav-link">Contact</a>
+        <button class="menu-close">✖</button>
+        <a href="/" class="nav-link" aria-label="Home page" id="home-page-link"
+          >HOME</a
+        >
+        <a
+          href="/pages/solutions.html"
+          class="nav-link"
+          aria-label="Solutions page"
+          id="solutions-link"
+          >SOLUTIONS</a
+        >
+        <a
+          href="/pages/industry-news.html"
+          class="nav-link"
+          aria-label="Industry page"
+          id="industry-news-link"
+          >INDUSTRY</a
+        >
+        <a
+          href="/pages/careers.html"
+          class="nav-link"
+          aria-label="Careers page"
+          id="careers-link"
+          >CAREERS</a
+        >
+        <a
+          href="/pages/contact.html"
+          class="nav-link"
+          aria-label="Contact page"
+          id="contact-link"
+          >CONTACT</a
+        >
       </nav>
     </header>
 
-    <main>
-      <section id="landing-section" class="landing-section">
-        <img
-          src="images/Transmission_towers_sunrise.jpg"
-          alt="Workers at a transmission site"
-          class="lazyload fade-image"
-          width="1920"
-          height="1080"
-        />
-        <div class="landing-text">
-          <h2>BUILDING A RELIABLE, AFFORDABLE GRID</h2>
-          <p>
-            WE DEVELOP INFRASTRUCTURE THAT PROVIDES ELECTRICITY FOR
-            AMERICA&apos;S GROWING ECONOMY.
-          </p>
-        </div>
-      </section>
+    <section id="landing-section" class="landing-section">
+      <img
+        src="images/Tower_field.jpg"
+        alt="Workers at a transmission site"
+        class="lazyload fade-image"
+        width="1920"
+        height="1080"
+      />
+      <div class="landing-text">
+        <h2>Developing infrastructure to power America forward</h2>
+      </div>
+    </section>
+    <section id="description-section" class="description-section">
+      <div class="description-text-box">
+        <p>
+          Rising electricity demand is straining the electric grid.
+          To grow its economy, America needs to expand the grid’s transmission
+          backbone. <br /><br />
+          Longview Infrastructure is a national transmission developer.
+          It applies decades of industry experience to reduce costs and increase
+          certainty.
+        </p>
+      </div>
+    </section>
 
-      <section id="transmission" class="section-content">
+    <main class="main-content">
+      <section id="industry-news" class="section-content">
         <div class="text-content">
-          <h1>TRANSMISSION</h1>
+          <h1>THE OPPORTUNITY</h1>
           <p>
-            Longview is a national developer of electric transmission. It has
-            decades of experience and a commitment to building a safe, reliable,
-            affordable grid.
+            Rising electricity demand and decarbonization are driving a
+            generational build-out of the transmission system.
           </p>
-          <p>
-            Rising electricity demand and the need for renewable power
-            generation are driving a generational build-out of the transmission
-            system. Studies have found that competitive processes can stimulate
-            innovation and reduce cost of that infrastructure.
-          </p>
+          <button onclick="window.location.href='/pages/industry-news.html'">
+            INDUSTRY NEWS
+          </button>
         </div>
         <img
-          src="images/Tower_field.jpg"
+          src="images/power-lines-sunny-day.png"
           alt="Transmission tower in a field"
           class="lazyload"
           width="800"
@@ -96,40 +137,50 @@
         />
       </section>
 
-      <section id="section-delimiter" class="section-delimiter">
+      <section id="solutions" class="section-content">
         <img
           src="images/Transmission_towers_clouds.jpg"
-          alt="Transmission towers against clouds"
-          class="lazyload fade-image"
-          width="1920"
-          height="1080"
-        />
-      </section>
-
-      <section id="regions" class="section-content">
-        <img
-          src="images/RTO_ISO_Full_Map.jpg"
           alt="Map of Longview's operational regions"
           class="lazyload"
           width="800"
           height="600"
         />
         <div class="text-content">
-          <h2>REGIONS</h2>
+          <h1>WHAT WE DO</h1>
           <p>
-            Longview operates across multiple regions, ensuring a wide-reaching
-            and efficient transmission network.
+            Longview leverages its breadth of transmission experience to develop
+            and capitalize transmission.
           </p>
-          <p>
-            Our strategic presence in key areas allows us to meet the diverse
-            energy needs of different communities and support the growth of
-            renewable energy sources.
-          </p>
+
+          <button onclick="window.location.href='/pages/solutions.html'">
+            SOLUTIONS
+          </button>
         </div>
       </section>
 
+      <section id="careers" class="section-content">
+        <div class="text-content">
+          <h1>JOIN US</h1>
+          <p>
+            Longview is seeking driven and ambitious professionals ready to
+            embrace new challenges and grow alongside our dynamic team.
+          </p>
+
+          <button onclick="window.location.href='/pages/careers.html'">
+            CAREERS
+          </button>
+        </div>
+        <img
+          src="images/Transmission_tower_sky.jpg"
+          alt="Map of Longview's operational regions"
+          class="lazyload"
+          width="800"
+          height="600"
+        />
+      </section>
+
       <!-- Contact Section -->
-      <section id="contact" class="contact-section">
+      <!-- <section id="contact" class="contact-section">
         <img
           src="images/Workers.jpg"
           alt="Transmission towers at sunrise"
@@ -148,16 +199,17 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Popup Modal Form -->
       <div id="contactModal" class="modal">
         <div class="modal-content">
           <span class="close" onclick="closeForm()">&times;</span>
           <div class="logo-container">
-            <img src="/icons/logo_copy.jpg" alt="Logo" class="logo" />
+            <img src="/icons/logo_copy.png" alt="Logo" class="logo" />
           </div>
           <form id="contactForm" action="/contact.php" method="POST">
+            <input type="hidden" name="form-type" value="contact" />
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required />
 
@@ -173,36 +225,65 @@
       </div>
       <!-- End Contact Section -->
     </main>
-
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="copyright">
-          <p>&copy; 2024 Longview Infrastructure. All rights reserved.</p>
-        </div>
-        <div class="footer-logo-container">
-          <a href="#top" class="logo-link">
+    <div class="footer-wrapper">
+      <section class="links-and-contacts">
+        <div class="footer-logo">
+          <a href="/" class="logo-link">
             <img
-              src="/icons/logo_copy.jpg"
+              src="/icons/logo_copy.png"
               class="footer-logo"
               alt="Longview Logo"
             />
           </a>
+          <p>Developing infrastructure<br /> to power America forward.</p>
         </div>
-        <div class="social-media-icons">
-          <a
-            href="https://www.linkedin.com"
-            target="_blank"
-            aria-label="LinkedIn"
-          >
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-          <i
-            class="fa-solid fa-envelope"
-            onclick="showForm()"
-            aria-label="Email"
-          ></i>
+        <div class="vertical-line"></div>
+        <div class="footer-links">
+          <h2>LINKS</h2>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/pages/solutions.html">Solutions</a></li>
+            <li><a href="/pages/industry-news.html">Industry News</a></li>
+            <li><a href="/pages/careers.html">Careers</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+          </ul>
         </div>
-      </div>
-    </footer>
+        <div class="vertical-line"></div>
+        <div class="footer-contact">
+          <h2>CONTACT</h2>
+          <p>
+            <a href="mailto:contact@longviewinfra.com"
+              >contact@longviewinfra.com</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://www.linkedin.com/company/longview-infrastructure/about/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://www.google.com/maps?q=16305+Swingley+Ridge+Road,+Suite+340,+Chesterfield,+Missouri+63017"
+              target="_blank"
+            >
+              16305 Swingley Ridge Road<br />
+              Suite 340<br />
+              Chesterfield, Missouri<br />
+              63017
+            </a>
+          </p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <!-- Footer content -->
+        <p>
+          &copy; <span id="currentYear"></span> Longview Infrastructure. All
+          rights reserved.
+        </p>
+      </footer>
+    </div>
   </body>
 </html>

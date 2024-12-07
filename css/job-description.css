@@ -1,0 +1,146 @@
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  /* background-image: url('/images/asfalt-dark.png'); */
+}
+
+/* Header Styling */
+.header {
+  position: fixed;
+  margin-bottom: 2rem;
+  header {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+  }
+}
+
+.job-description-page .logo-black {
+  display: block;
+}
+
+.job-description-page .logo-white {
+  display: none;
+}
+
+.job-description-page .header-right a {
+  color: black
+}
+
+.back-link {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  color: #555;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-link:hover {
+  color: black;
+}
+
+/* Main Content Styling */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 7rem 0 0;
+}
+
+/* Job description section */
+.job-description {
+  max-height: 75vh;
+  overflow-y: auto;
+  max-width: 75%;
+  background-color: #fff;
+  width: 100%;
+  /* max-width: 800px; */
+  padding: 50px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  margin-top: 0;
+  border-radius: 7px;
+}
+
+.job-description h1 {
+  color: #555;
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Section Title Styling */
+.job-description .section-title {
+  font-size: 18px;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Paragraph Styling - Consistent spacing for all paragraphs */
+.job-description p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.job-description strong {
+  font-weight: bold;
+}
+
+/* Apply button styling */
+.apply-button {
+  display: inline-block;
+  background-color: #555;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  text-decoration: none; /* Remove underline */
+  font-size: 16px;
+  border-radius: 7px;
+  width: 95%;
+  text-align: center; /* Center the text inside the link */
+  margin: 3rem auto 0;
+  cursor: pointer;
+}
+
+.apply-button:hover {
+  background-color: black;
+}
+
+/* Adjust section group spacing for clarity */
+.job-description .section-group {
+  margin-bottom: 20px;
+}
+
+/* Adjust specific paragraph margin for 'About Us' and 'Description' */
+.about-us p,
+.description p,
+.education p,
+.roles p,
+.about-you p {
+  margin-top: 0; /* Remove any margin at the top */
+  margin-bottom: 15px; /* Consistent margin below paragraphs */
+}
+
+/* Roles list */
+#job-roles,
+#your-experience,
+#our-offer {
+  list-style-type: disc;
+  margin: 15px 0;
+  padding-left: 30px;
+  font-size: 1rem;
+}
+
+#job-roles li,
+#your-experience li,
+#our-offer li {
+  margin-bottom: 10px; /* Space between each item */
+  line-height: 1.2;
+}

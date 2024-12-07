@@ -1,0 +1,252 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-image: url('/images/asfalt-dark.png'); */
+  color: #3f3f3f;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+/* Ensure content doesn't overlap with header */
+header {
+  position: fixed;
+  z-index: 1000;
+  /* background-color: white; */
+}
+
+/* Add margin to main content to ensure it's below header */
+main {
+  display: flex;
+  flex-direction: column;
+  /* flex: 1; */
+}
+.career-section {
+  position: relative; /* Ensure the pseudo-element is positioned relative to the section */
+  width: 100vw;
+  height: 65vh;
+  padding: 10rem 0;
+  background-image: url('/images/Workers.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  z-index: 1; /* Ensure content appears above the overlay */
+}
+
+.career-section h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.career-section p {
+  font-size: 1.75rem;
+}
+
+/* Specific Styling for Solutions Page */
+.solutions-page .career-section {
+  background-image: url('/images/Transmission_helicopter.png');
+  background-size: cover;
+}
+.solutions-page .section-content .text-content {
+  padding: 0;
+  justify-content: flex-start;
+  max-width: 60%;
+}
+
+.solutions-page .section-content img {
+  height: auto;
+  padding: 2rem;
+  max-width: 250px;
+}
+#card img {
+  max-width: 40%;
+  height: auto;
+  padding: 0;
+}
+
+#card .text-content {
+  max-width: 50%;
+}
+
+/* Specific Styling for Job Description Page */
+
+.job-description-page .logo-black {
+  display: block;
+}
+
+.job-description-page .logo-white {
+  display: none;
+}
+
+/* Specific Styling for Contact Us Page */
+.contact-us-page .career-section {
+  background-image: url('/images/high-voltage-towers.jpg');
+}
+
+.contact-us-page .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  max-width: 60vw;
+  margin: 0;
+}
+.contact-us-page .card-content h2 {
+  margin: 1rem 0;
+}
+
+.contact-us-page .card-content a,
+.contact-us-page .card-content p {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.career-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.career-section img {
+  width: 100%;
+}
+
+.career-top {
+  font-size: 1.5rem;
+}
+
+.careers-title {
+  margin: 0 6%;
+  font-weight: 300;
+}
+
+.career-description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem 0;
+}
+
+.text-box {
+  flex: 1;
+  min-width: 300px;
+  max-width: 45%;
+  padding-top: 20px;
+  margin: 0 5%;
+}
+
+.first-box {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.text-box p {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.about-section {
+  font-size: 1.25rem;
+  line-height: 1.25;
+  margin: 3% 6%;
+}
+.main-content {
+  margin: 0 6%;
+}
+
+.opportunities-section {
+  padding: 2rem 6rem 2rem;
+  background-color: #ececec;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* background-image: url('/images/asfalt-dark.png'); */
+}
+
+.opportunities-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  /* padding-left: 2rem; */
+}
+
+.job-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 3rem;
+}
+
+.job-item {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 15px;
+  background-color: #faf9f6;
+  color: black;
+}
+
+.job-link {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.job-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.job-link:visited {
+  color: #3f3f3f;
+}
+
+.job-description {
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
+.job-location,
+.job-type {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  font-weight: 200;
+}
+
+.job-location i,
+.job-type i {
+  margin-right: 8px;
+  font-size: 1rem;
+}
+
+.job-location span,
+.job-type span {
+  font-size: 1rem;
+}
+
+.links-and-contacts {
+  min-height: 250px;
+}
+
+#card #specific-logo {
+  width: 375px;
+  height: auto;
+  border: 2px solid black;
+}
