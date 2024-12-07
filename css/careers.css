@@ -28,7 +28,7 @@ main {
 .career-section {
   position: relative; /* Ensure the pseudo-element is positioned relative to the section */
   width: 100vw;
-  height: 65vh;
+  min-height: 75vh;
   padding: 10rem 0;
   background-image: url('/images/Workers.jpg');
   background-size: cover;
@@ -127,7 +127,7 @@ main {
 }
 
 .careers-title {
-  margin: 0 6%;
+  margin: 6% 6% 0;
   font-weight: 300;
 }
 
@@ -171,10 +171,10 @@ main {
 
 .opportunities-section {
   padding: 2rem 6rem 2rem;
-  background-color: #ececec;
+  /* background-color: #ececec; */
+  background: radial-gradient(circle, #f0f0f0, #d0d0d0);
   border-radius: 10px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
-  /* background-image: url('/images/asfalt-dark.png'); */
 }
 
 .opportunities-title {

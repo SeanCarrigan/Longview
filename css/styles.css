@@ -65,6 +65,7 @@ body {
 }
 .header.scrolled {
   background-color: #faf9f6;
+  /* background: linear-gradient(to bottom, #f0f0f0, #d0d0d0); */
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -118,16 +119,19 @@ body {
 }
 
 .header-right a.active {
-  background-color: lightgray;
-  color: white;
-  padding: 10px;
-  border-radius: 7px;
+  /* background-color: #dcdcdc; */
+  background: radial-gradient(circle, #f0f0f0, #d0d0d0);
+  color: black;
+  padding: 10px 10px 5px 10px;
+  border-radius: 3px;
 }
 
 .header-right a:hover {
-  background-color: lightgray;
-  border-radius: 7px;
-  padding: 10px;
+  /* background-color: #dcdcdc; */
+  background: radial-gradient(circle, #f0f0f0, #d0d0d0);
+  color: black;
+  border-radius: 3px;
+  padding: 10px 10px 5px 10px;
 }
 
 .header .logo-link img,
@@ -217,7 +221,7 @@ body {
 .landing-section {
   position: relative;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -273,10 +277,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #ececec;
+  /* background-color: #ececec; */
+  background: radial-gradient(circle, #f0f0f0, #d0d0d0);
   border-radius: 15px;
   overflow: hidden;
-  border: 1px solid #ececec;
+  /* border: 1px solid #ececec; */
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -631,7 +636,8 @@ body {
   min-height: 80px;
   overflow: hidden;
   z-index: 1;
-  background-color: #ececec;
+  /* background-color: #ececec; */
+  background-color: #b0b0b0;
 }
 .footer p {
   font-size: 0.8rem;
@@ -653,7 +659,8 @@ body {
   box-sizing: border-box;
   border-top: 1px solid #a9a9a9;
   z-index: 1;
-  background-color: #ececec;
+  /* background-color: #ececec; */
+  background: linear-gradient(to bottom, #ffffff, #b0b0b0);
 }
 
 .links-and-contacts h2 {
@@ -713,7 +720,7 @@ body {
   height: 100%;
   background-color: #a9a9a9;
   margin-left: 15%;
-  margin-right: 50px
+  margin-right: 50px;
 }
 
 /* Responsive Design for Smaller Screens */

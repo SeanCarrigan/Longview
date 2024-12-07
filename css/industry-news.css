@@ -42,8 +42,9 @@
   align-items: flex-start;
   padding: 15px;
   min-width: 300px;
-  background-color: #eee;
-  border: 1px solid #ddd;
+  /* background-color: #eee; */
+  background: linear-gradient(to bottom, #ffffff, #dcdcdc);
+  /* border: 1px solid #ddd; */
   border-radius: 8px;
   box-sizing: border-box;
   flex-shrink: 0;
