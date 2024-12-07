@@ -49,12 +49,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->Host = 'smtp.gmail.com'; // GoDaddy SMTP server
             $mail->Port = 587;
             $mail->SMTPAuth = true;
-            $mail->Username = 'sean.t.carrigan@gmail.com';
-            $mail->Password = 'twtm jbed sozc lmvv'; // Use an app-specific password for Gmail
+            $mail->Username = '';
+            $mail->Password = ''; // Use an app-specific password for Gmail
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 
             // Recipients
-            $mail->setFrom('sean.t.carrigan@gmail.com', 'TESTING'); // GoDaddy sender email (contact@domain)
+            $mail->setFrom('', 'TESTING'); // GoDaddy sender email (contact@domain)
             $mail->addAddress('sean.t.carrigan@gmail.com'); // Add a recipient email address
             $mail->addReplyTo($email, $name);
 
