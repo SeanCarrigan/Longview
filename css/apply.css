@@ -122,9 +122,11 @@ button[type='submit']:hover {
 }
 
 /* Responsiveness */
-@media (max-width: 600px) {
+@media (max-width: 768px) { 
   .container {
     padding: 20px;
+    width: 90%;
+    max-width: 90%;
   }
 
   h1 {

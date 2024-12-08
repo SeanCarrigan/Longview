@@ -144,3 +144,10 @@ body {
   margin-bottom: 10px; /* Space between each item */
   line-height: 1.2;
 }
+
+@media (max-width: 768px) {
+  .job-description {
+    max-width: 90%;
+    padding: 30px;
+  }
+}

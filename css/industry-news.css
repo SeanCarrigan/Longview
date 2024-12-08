@@ -81,7 +81,7 @@
 
 /* Paragraph inside each card */
 .card-content p {
-  font-size: 0.85rem;
+  font-size: 1rem;
   margin: 0;
   text-align: left;
   line-height: 1.5;
@@ -115,8 +115,25 @@
 }
 
 .button-box {
-  margin-top: 20px;
+  margin: 0 0 5% 0; /* top | right | bottom | left */
+}
+
+.button-box button {
+  background-color: #b0b0b0;
+  border-radius: 5px;
+  padding: 5px 15px;
 }
 #sub-title h1 {
   font-size: 0.75rem;
+}
+
+@media (max-width: 850px) {
+  .main-content {
+    margin-left: 20%;
+  }
+
+  .card-content {
+    min-width: 80%;
+    max-width: 80%;
+  }
 }

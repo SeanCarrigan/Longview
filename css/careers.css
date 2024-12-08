@@ -68,9 +68,13 @@ main {
   height: auto;
   padding: 0;
 }
+/* #card h1 {
+  margin-top: 20px;
+} */
 
 #card .text-content {
   max-width: 50%;
+  margin: 5%
 }
 
 /* Specific Styling for Job Description Page */
@@ -97,14 +101,19 @@ main {
   margin: 0;
 }
 .contact-us-page .card-content h2 {
-  margin: 1rem 0;
+  margin: 1.25rem 0;
 }
 
-.contact-us-page .card-content a,
-.contact-us-page .card-content p {
-  text-decoration: none;
+.contact-us-page .card-content a {
+  width: 350px;
+  text-decoration: underline;
   color: black;
   margin-bottom: 5px;
+  
+}
+.contact-us-page .card-content a,
+.contact-us-page .card-content p {
+  font-size: 1.25rem;
 }
 
 .career-section::before {
@@ -166,7 +175,7 @@ main {
   margin: 3% 6%;
 }
 .main-content {
-  margin: 0 6%;
+  margin: 0 5% 5% 5%; /* top | right | bottom | left */
 }
 
 .opportunities-section {
@@ -246,7 +255,50 @@ main {
 }
 
 #card #specific-logo {
-  width: 375px;
-  height: auto;
-  border: 2px solid black;
+  width: 50%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .solutions-page .section-content .text-content {
+    max-width: 80%;
+  }
+  .text-content h1 {
+    margin-top: 30px;
+    text-align: start;
+  }
+  #card {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+  }
+
+  #card img {
+    width: 100%; /* Ensure image fills the card width */
+    height: auto;
+    margin: 0; /* Remove any default margins */
+    max-width: 100%;
+  }
+
+  #card .text-content {
+    max-width: 80%;
+  }
+
+  #card #specific-logo {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .about-section {
+    margin: 7%;
+  }
+  .opportunities-section {
+    padding: 0 0 5% 0; /* top | right | bottom | left */
+  }
+
+  .opportunities-section h2 {
+    margin: 10% 3% 10% 5%; /* top | right | bottom | left */
+  }
+
+  .job-list {
+    margin: 5%;
+  }
 }
