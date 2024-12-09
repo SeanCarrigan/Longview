@@ -53,10 +53,9 @@ main {
 .solutions-page .career-section {
   background-image: url('/images/Transmission_helicopter.png');
   /* background-size: cover; */
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
-  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Specific Styling for Job Description Page */
@@ -83,14 +82,14 @@ main {
   margin: 0;
 }
 .contact-us-page .card-content h2 {
-  margin: 7% 0 1% 0; /* top | right | bottom | left */
+  margin: 5% 0 1% 0; /* top | right | bottom | left */
 }
 
 .contact-us-page .card-content a {
   width: 350px;
   text-decoration: underline;
   color: black;
-  margin-bottom: 5px;
+  margin-bottom: 2rem;
 }
 .contact-us-page .card-content a,
 .contact-us-page .card-content p {
@@ -141,16 +140,7 @@ main {
   margin-bottom: 20px;
 }
 
-/* .text-box p {
-  font-size: 1.5rem;
-  font-weight: 100;
-} */
 
-.about-section {
-  font-size: 1.25rem;
-  line-height: 1.25;
-  margin: 3% 5%;
-}
 .main-content {
   margin: 0 5% 5% 5%; /* top | right | bottom | left */
 }
@@ -160,7 +150,6 @@ main {
   /* background-color: #ececec; */
   background: radial-gradient(circle, #f0f0f0, #d0d0d0);
   border-radius: 10px;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .opportunities-title {
@@ -250,7 +239,6 @@ main {
     line-height: 1.5;
   }
 
-
   .about-section {
     margin: 5% 7% 5% 7%; /* top | right | bottom | left */
   }
@@ -259,7 +247,6 @@ main {
     margin: 0 7% 5% 7%; /* top | right | bottom | left */
   }
 
-  
   .opportunities-section {
     padding: 0 0 5% 0; /* top | right | bottom | left */
   }

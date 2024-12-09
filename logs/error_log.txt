@@ -38,3 +38,23 @@
 [2024-11-26 21:12:26] Job application sent successfully from sean.t.carrigan@gmail.com
 [2024-11-26 21:20:45] Job application sent successfully from sean.t.carrigan@gmail.com
 [2024-11-26 21:21:06] Email sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 08:36:48] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 08:38:36] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 08:46:59] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 08:50:33] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 08:51:04] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 08:52:42] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 08:59:30] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 09:04:09] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 09:12:49] Error sending application: SMTP Error: Could not authenticate.
+[2024-12-09 09:13:56] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 16:20:51] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 16:28:45] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 16:32:34] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 16:34:32] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 16:41:26] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 16:41:28] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 16:43:36] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 16:47:11] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 17:11:40] Job application sent successfully from sean.t.carrigan@gmail.com
+[2024-12-09 17:12:40] Job application sent successfully from sean.t.carrigan@gmail.com

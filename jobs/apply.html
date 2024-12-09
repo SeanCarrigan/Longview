@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Job Application</title>
-    <script src="/js/main.js" type="text/javascript"></script>
-    <script src="/js/careers.js" type="module"></script>
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/job-description.css" />
     <link rel="stylesheet" href="../css/apply.css" />
@@ -13,6 +11,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       rel="stylesheet"
     />
+    <script src="/js/main.js" type="text/javascript"></script>
+    <script src="/js/careers.js" type="module"></script>
+    <script src="/js/apply.js" type="module"></script>
   </head>
   <body class="job-description-page">
     <header class="header">
@@ -76,7 +77,12 @@
 
       <div class="container">
         <h1>Personal Details</h1>
-        <form id="application-form" action="/contact.php" method="POST">
+        <form
+          id="application-form"
+          action="/contact.php"
+          method="POST"
+          enctype="multipart/form-data"
+        >
           <input type="hidden" name="form-type" value="application" />
 
           <!-- Full Name -->
@@ -154,52 +160,6 @@
             />
           </div>
 
-          <!-- <div class="form-group" id="disclaimer">
-            <label for="disclaimer">We're an equal opportunity employer</label>
-            <p class="disclaimer">
-              You are requested (not required) to complete the personal data
-              below. This information will only be used for government reporting
-              purposes and not as selection criteria for our hiring process.
-            </p>
-          </div> -->
-
-          <!-- Race/Ethnicity Selector -->
-          <!-- <div class="form-group">
-            <label for="race">Race/Ethnicity</label>
-            <select id="race" name="race" aria-describedby="race-help">
-              <option value="">Select your race/ethnicity</option>
-              <option value="white">White (not Hispanic or Latino)</option>
-              <option value="black">
-                Black or African-American (not Hispanic or Latino)
-              </option>
-              <option value="asian">Asian (not Hispanic or Latino)</option>
-              <option value="hispanic">Hispanic or Latino</option>
-              <option value="native">
-                American Indian or Alaskan Native (not Hispanic or Latino)
-              </option>
-              <option value="pacific">
-                Native Hawaiian or other Pacific islander (not Hispanic or
-                Latino)
-              </option>
-              <option value="multiple">
-                Two or more races/ethnicities (not Hispanic or Latino)
-              </option>
-              <option value="none">I do not wish to answer</option>
-            </select>
-          </div> -->
-
-          <!-- Gender Selector -->
-          <!-- <div class="form-group">
-            <label for="gender">Gender</label>
-            <select id="gender" name="gender" aria-describedby="gender-help">
-              <option value="">Select your gender</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-              <option value="non-binary">Non-Binary</option>
-              <option value="none">I do not wish to answer</option>
-            </select>
-          </div>  -->
-
           <!-- Hidden Fields for Job Title and Location -->
           <input type="hidden" id="job-title" name="job-title" value="" />
           <input type="hidden" id="job-location" name="job-location" value="" />
@@ -211,63 +171,79 @@
         </form>
       </div>
     </main>
-    <div class="footer-wrapper"></div>
-      <section class="links-and-contacts">
-        <div class="footer-logo">
-          <a href="/" class="logo-link">
-            <img
-              src="/icons/logo_copy.png"
-              class="footer-logo"
-              alt="Longview Logo"
-            />
-          </a>
-          <p>Developing infrastructure<br /> to power America forward.</p>
-        </div>
-        <div class="vertical-line"></div>
-        <div class="footer-links">
-          <h2>LINKS</h2>
-          <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/pages/solutions.html">Solutions</a></li>
-            <li><a href="/pages/industry-news.html">Industry News</a></li>
-            <li><a href="/pages/careers.html">Careers</a></li>
-            <li><a href="/pages/contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="vertical-line"></div>
-        <div class="footer-contact">
-          <h2>CONTACT</h2>
-          <p>
-            <a href="mailto:info@longviewinfra.com">info@longviewinfra.com</a>
-          </p>
-          <p>
-            <a href="https://www.linkedin.com/company/longview-infrastructure/" target="_blank">
-              <i class="fab fa-linkedin" style="font-size: 20px; margin-right: 0px;"></i>
-              LinkedIn
-            </a>
-          </p>
-          <p>
-            <a
-              href="https://www.google.com/maps?q=16305+Swingley+Ridge+Road,+Suite+340,+Chesterfield,+Missouri+63017"
-              target="_blank"
-            >
-              16305 Swingley Ridge Road<br />
-              Suite 340<br />
-              Chesterfield, Missouri<br />
-              63017
-            </a>
-          </p>
-        </div>
-      </section>
 
-      <footer class="footer">
-        <!-- Footer content -->
-        <p>
-          &copy; <span id="currentYear"></span> Longview Infrastructure. All
-          rights reserved.
-        </p>
-      </footer>
+    <!-- Pop-up Modal -->
+    <div id="popup-modal" class="modal hidden">
+      <div class="modal-content">
+        <p id="popup-message">Thank you for submitting your resume!</p>
+        <button onclick="closePopup()">Close</button>
+      </div>
     </div>
+    <div class="footer-wrapper"></div>
+    <section class="links-and-contacts">
+      <div class="footer-logo">
+        <a href="/" class="logo-link">
+          <img
+            src="/icons/logo_copy.png"
+            class="footer-logo"
+            alt="Longview Logo"
+          />
+        </a>
+        <p>
+          Developing infrastructure<br />
+          to power America forward.
+        </p>
+      </div>
+      <div class="vertical-line"></div>
+      <div class="footer-links">
+        <h2>LINKS</h2>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/pages/solutions.html">Solutions</a></li>
+          <li><a href="/pages/industry-news.html">Industry News</a></li>
+          <li><a href="/pages/careers.html">Careers</a></li>
+          <li><a href="/pages/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="vertical-line"></div>
+      <div class="footer-contact">
+        <h2>CONTACT</h2>
+        <p>
+          <a href="mailto:info@longviewinfra.com">info@longviewinfra.com</a>
+        </p>
+        <p>
+          <a
+            href="https://www.linkedin.com/company/longview-infrastructure/"
+            target="_blank"
+          >
+            <i
+              class="fab fa-linkedin"
+              style="font-size: 20px; margin-right: 0px"
+            ></i>
+            LinkedIn
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://www.google.com/maps?q=16305+Swingley+Ridge+Road,+Suite+340,+Chesterfield,+Missouri+63017"
+            target="_blank"
+          >
+            16305 Swingley Ridge Road<br />
+            Suite 340<br />
+            Chesterfield, Missouri<br />
+            63017
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <!-- Footer content -->
+      <p>
+        &copy; <span id="currentYear"></span> Longview Infrastructure. All
+        rights reserved.
+      </p>
+    </footer>
   </body>
   <!-- Closing body tag -->
 </html>

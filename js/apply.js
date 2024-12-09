@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
       event.preventDefault(); // Prevent the default form submission
 
       const formData = new FormData(this);
-      console.log(formData);
 
       fetch('/contact.php', {
         method: 'POST',
@@ -23,68 +22,40 @@ document.addEventListener('DOMContentLoaded', function () {
       })
         .then((response) => response.text())
         .then((result) => {
-          const modal = document.getElementById('container');
-          const form = this;
-
+          console.log('Response from server:', result); // Log the server response for debugging
           if (result.trim() === 'success') {
-            const successMessage = document.createElement('p');
-            successMessage.classList.add('success-message');
-            successMessage.textContent = 'Your application has been sent!';
-            // alert('Your application has been sent!');
-
-            // Clear the form fields and append the success message
-            form.reset();
-            form.appendChild(successMessage);
+            // Show the pop-up message and auto-close
+            showPopup('Thank you for submitting your application!', () => {
+              window.location.href = '../pages/careers.html'; // Redirect after modal closes
+            });
           } else {
-            const errorMessage = document.createElement('p');
-            errorMessage.classList.add('error-message');
-            errorMessage.textContent = result;
-
-            form.appendChild(errorMessage);
+            showPopup(
+              'There was an issue submitting your application. Please try again.'
+            );
           }
         })
         .catch((error) => {
           console.error('Error:', error);
-          const form = this;
-          const errorMessage = document.createElement('p');
-          errorMessage.classList.add('error-message');
-          errorMessage.textContent =
-            'There was a problem sending your message.';
-          form.appendChild(errorMessage);
+          showPopup(
+            'There was a problem submitting your application. Please try again later.'
+          );
         });
     });
 
-  //   const applicationForm = document.getElementById('application-form');
+  // Pop-up Modal
+  function showPopup(message, callback) {
+    const modal = document.getElementById('popup-modal');
+    const popupMessage = document.getElementById('popup-message');
+    popupMessage.textContent = message;
+    modal.classList.remove('hidden');
+    setTimeout(() => {
+      closePopup();
+      if (callback) callback(); // Execute callback if provided
+    }, 3000); // Auto close after 3 seconds
+  }
 
-  //   // Function to handle form submission via AJAX
-  //   async function handleFormSubmission(event) {
-  //     event.preventDefault(); // Prevent the default form submission
-
-  //     const formData = new FormData(applicationForm);
-
-  //     try {
-  //       const response = await fetch('/contact.php', {
-  //         method: 'POST',
-  //         body: formData,
-  //       });
-
-  //       // Ensure response is JSON
-  //       const result = await response.json();
-
-  //       if (result.status === 'success') {
-  //         alert(result.message);
-  //         applicationForm.reset();
-  //       } else {
-  //         alert(result.message || 'There was an error with your submission.');
-  //       }
-  //     } catch (error) {
-  //       console.error('Request failed:', error);
-  //       alert('There was a problem with the request: ' + error.message);
-  //     }
-  //   }
-
-  //   // Attach the event listener to the form's submit event
-  //   if (applicationForm) {
-  //     applicationForm.addEventListener('submit', handleFormSubmission);
-  //   }
+  function closePopup() {
+    const modal = document.getElementById('popup-modal');
+    modal.classList.add('hidden');
+  }
 });

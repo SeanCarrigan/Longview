@@ -1,4 +1,5 @@
 <?php
+
 // Setup for using PHPMailer
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -49,17 +50,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->Host = 'smtp.gmail.com'; // GoDaddy SMTP server
             $mail->Port = 587;
             $mail->SMTPAuth = true;
-            $mail->Username = '';
+            $mail->Username = 'sean.t.carrigan@gmail.com';
             $mail->Password = ''; // Use an app-specific password for Gmail
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 
             // Recipients
-            $mail->setFrom('', 'TESTING'); // GoDaddy sender email (contact@domain)
-<<<<<<< HEAD
+            $mail->setFrom('sean.t.carrigan@gmail.com', 'TESTING'); // GoDaddy sender email (contact@domain)
             $mail->addAddress('sean.t.carrigan@gmail.com'); // Add a recipient email address
-=======
-            $mail->addAddress(''); // Add a recipient email address
->>>>>>> 39787bb94d7a00766e2bcc738714f6f91e275570
+
             $mail->addReplyTo($email, $name);
 
             // Content
@@ -88,8 +86,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL);
         $phone = htmlspecialchars(trim($_POST['phone']));
         $experienceSummary = htmlspecialchars(trim($_POST['experience-summary']));
-        $race = htmlspecialchars(trim($_POST['race'])) ?: 'not specified';
-        $gender = htmlspecialchars(trim($_POST['gender'])) ?: 'not specified';
         $resume = $_FILES['resume'];  // Handle file upload
 
         // Check if email is valid
@@ -126,7 +122,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->Port = 587;
             $mail->SMTPAuth = true;
             $mail->Username = 'sean.t.carrigan@gmail.com';
-            $mail->Password = 'twtm jbed sozc lmvv'; // app-specific password for Gmail *remove*
+            $mail->Password = ''; // app-specific password for Gmail *remove*
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 
             // Recipients
@@ -146,8 +142,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->Body   .= "Phone: $phone\n";
             $mail->Body   .= "Location: $jobLocation\n";
             $mail->Body   .= "Experience Summary: $experienceSummary\n";
-            $mail->Body   .= "Race/Ethnicity: $race\n";
-            $mail->Body   .= "Gender: $gender\n";
 
             $mail->send();
             echo "success";
@@ -159,4 +153,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 }
+
+
 ?>
