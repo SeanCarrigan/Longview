@@ -316,7 +316,7 @@ body {
   object-fit: cover;
 }
 
-.overlay {
+/* .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -324,13 +324,14 @@ body {
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
   z-index: 2;
-}
-.overlay-content {
+} */
+
+/* .overlay-content {
   z-index: 3;
   position: relative;
   text-align: center;
   cursor: pointer;
-}
+} */
 
 .contact-info {
   display: flex;
@@ -641,21 +642,20 @@ body {
   align-items: center;
   justify-content: space-between;
   max-height: 50vh;
-  /* background-color: #ececec; */
+  /* flex-wrap: wrap; */
   background: radial-gradient(circle, #f0f0f0, #d0d0d0);
   border-radius: 15px;
   overflow: hidden;
   /* border: 1px solid #ececec; */
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
-  gap: 10px;
+  gap: 1rem;
 }
 
 .section-content img {
-  width: 100%;
-  height: auto;
+  width: 50%;
+  height: 100%;
   padding: 0;
   border: none;
-  flex: 2;
 }
 
 .section-content #icon {
@@ -669,13 +669,18 @@ body {
 }
 
 .text-content {
-  flex: 1.25;
   display: flex;
   flex-direction: column;
   align-items: center;
   /* padding: 20px 40px; */
   max-width: 45%;
   margin: 2rem 5rem;
+}
+.section-content .text-content {
+  flex: 1; /* Take equal space with the image */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center text content vertically */
 }
 
 .text-content button {

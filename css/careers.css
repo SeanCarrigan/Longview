@@ -27,13 +27,12 @@ main {
   position: relative; /* Ensure the pseudo-element is positioned relative to the section */
   width: 100vw;
   min-height: 75vh;
-  /* padding: 10rem 0; */
   background-image: url('/images/Workers.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   color: white;
-  z-index: 1; /* Ensure content appears above the overlay */
+  z-index: 1;
 }
 
 .career-top {
