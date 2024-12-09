@@ -118,11 +118,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         try {
             // Server settings
             $mail->isSMTP();
-            $mail->Host = 'smtp.gmail.com'; // GoDaddy SMTP server
+            $mail->Host = 'smtp.gmai.com'; // GoDaddy SMTP server
             $mail->Port = 587;
             $mail->SMTPAuth = true;
             $mail->Username = 'sean.t.carrigan@gmail.com';
-            $mail->Password = ''; // app-specific password for Gmail *remove*
+            $mail->Password = 'twtm jbed sozc lmvv'; // app-specific password for Gmail *remove*
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 
             // Recipients

@@ -17,7 +17,6 @@ body {
 
 .menu-toggle {
   color: black;
-  
 }
 
 .job-description-page .logo-black {
@@ -28,9 +27,9 @@ body {
   display: none;
 }
 
-/* .job-description-page .header-right a {
+.job-description-page .header-right a {
   color: black;
-} */
+}
 
 .back-link {
   display: block;
