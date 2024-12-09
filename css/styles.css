@@ -306,23 +306,6 @@ body {
   object-fit: cover;
 }
 
-/* .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 2;
-} */
-
-/* .overlay-content {
-  z-index: 3;
-  position: relative;
-  text-align: center;
-  cursor: pointer;
-} */
-
 .contact-info {
   display: flex;
   flex-direction: column;
@@ -859,5 +842,9 @@ body {
 
   .section-content img {
     height: auto;
+  }
+  .about-text-box {
+    width: 80vw;
+    margin: 0;
   }
 }
