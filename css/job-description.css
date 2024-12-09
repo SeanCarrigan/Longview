@@ -2,7 +2,6 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
   box-sizing: border-box;
   /* background-image: url('/images/asfalt-dark.png'); */
 }
@@ -12,8 +11,13 @@ body {
   position: fixed;
   margin-bottom: 2rem;
   header {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
   }
+}
+
+.menu-toggle {
+  color: black;
+  
 }
 
 .job-description-page .logo-black {
@@ -24,9 +28,9 @@ body {
   display: none;
 }
 
-.job-description-page .header-right a {
-  color: black
-}
+/* .job-description-page .header-right a {
+  color: black;
+} */
 
 .back-link {
   display: block;
@@ -145,7 +149,7 @@ body {
   line-height: 1.2;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .job-description {
     max-width: 90%;
     padding: 30px;

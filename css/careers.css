@@ -6,7 +6,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* background-image: url('/images/asfalt-dark.png'); */
   color: #3f3f3f;
   background-color: #f5f5f5;
   min-height: 100vh;
@@ -16,7 +15,6 @@ body {
 header {
   position: fixed;
   z-index: 1000;
-  /* background-color: white; */
 }
 
 /* Add margin to main content to ensure it's below header */
@@ -29,7 +27,7 @@ main {
   position: relative; /* Ensure the pseudo-element is positioned relative to the section */
   width: 100vw;
   min-height: 75vh;
-  padding: 10rem 0;
+  /* padding: 10rem 0; */
   background-image: url('/images/Workers.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -38,43 +36,28 @@ main {
   z-index: 1; /* Ensure content appears above the overlay */
 }
 
-.career-section h1 {
-  font-size: 3.5rem;
-  font-weight: 600;
+.career-top {
+  margin: 15% 0 0 5%; /* top | right | bottom | left */
 }
 
-.career-section p {
-  font-size: 1.75rem;
+.career-top h1 {
+  font-size: 4.75rem;
+  font-weight: 900;
+}
+
+.career-top p {
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 /* Specific Styling for Solutions Page */
 .solutions-page .career-section {
   background-image: url('/images/Transmission_helicopter.png');
-  background-size: cover;
-}
-.solutions-page .section-content .text-content {
-  padding: 0;
-  justify-content: flex-start;
-  max-width: 60%;
-}
-
-.solutions-page .section-content img {
-  height: auto;
-  padding: 2rem;
-  max-width: 250px;
-}
-#card img {
-  max-width: 40%;
-  height: auto;
-  padding: 0;
-}
-/* #card h1 {
-  margin-top: 20px;
-} */
-
-#card .text-content {
-  max-width: 50%;
-  margin: 5%
+  /* background-size: cover; */
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  
 }
 
 /* Specific Styling for Job Description Page */
@@ -101,7 +84,7 @@ main {
   margin: 0;
 }
 .contact-us-page .card-content h2 {
-  margin: 1.25rem 0;
+  margin: 7% 0 1% 0; /* top | right | bottom | left */
 }
 
 .contact-us-page .card-content a {
@@ -109,7 +92,6 @@ main {
   text-decoration: underline;
   color: black;
   margin-bottom: 5px;
-  
 }
 .contact-us-page .card-content a,
 .contact-us-page .card-content p {
@@ -131,21 +113,17 @@ main {
   width: 100%;
 }
 
-.career-top {
-  font-size: 1.5rem;
-}
-
-.careers-title {
+/* .careers-title {
   margin: 6% 6% 0;
   font-weight: 300;
-}
+} */
 
 .career-description {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem 0;
+  /* padding: 0 1rem 0; */
 }
 
 .text-box {
@@ -153,7 +131,7 @@ main {
   min-width: 300px;
   max-width: 45%;
   padding-top: 20px;
-  margin: 0 5%;
+  /* margin: 0 5%; */
 }
 
 .first-box {
@@ -164,15 +142,15 @@ main {
   margin-bottom: 20px;
 }
 
-.text-box p {
+/* .text-box p {
   font-size: 1.5rem;
   font-weight: 100;
-}
+} */
 
 .about-section {
   font-size: 1.25rem;
   line-height: 1.25;
-  margin: 3% 6%;
+  margin: 3% 5%;
 }
 .main-content {
   margin: 0 5% 5% 5%; /* top | right | bottom | left */
@@ -226,7 +204,7 @@ main {
 
 .job-description {
   font-size: 1rem;
-  font-weight: 200;
+  font-weight: 500;
   line-height: 1.25;
   margin-bottom: 10px;
 }
@@ -254,42 +232,35 @@ main {
   min-height: 250px;
 }
 
-#card #specific-logo {
+/* #card #specific-logo {
   width: 50%;
-  height: 100%;
-}
+  height: auto;
+} */
 
-@media (max-width: 768px) {
-  .solutions-page .section-content .text-content {
-    max-width: 80%;
+@media (max-width: 1024px) {
+  .career-top {
+    margin: 45% 0 0 7%; /* top | right | bottom | left */
   }
+
   .text-content h1 {
     margin-top: 30px;
     text-align: start;
   }
-  #card {
-    display: flex;
-    flex-direction: column; /* Stack content vertically */
+
+  .card-content p {
+    line-height: 1.5;
   }
 
-  #card img {
-    width: 100%; /* Ensure image fills the card width */
-    height: auto;
-    margin: 0; /* Remove any default margins */
-    max-width: 100%;
-  }
 
-  #card .text-content {
-    max-width: 80%;
-  }
-
-  #card #specific-logo {
-    margin-top: 20px;
-    width: 100%;
-  }
   .about-section {
-    margin: 7%;
+    margin: 5% 7% 5% 7%; /* top | right | bottom | left */
   }
+
+  .main-content {
+    margin: 0 7% 5% 7%; /* top | right | bottom | left */
+  }
+
+  
   .opportunities-section {
     padding: 0 0 5% 0; /* top | right | bottom | left */
   }
@@ -300,5 +271,20 @@ main {
 
   .job-list {
     margin: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .career-top h1 {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+
+  .career-top p {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .text-content h1 {
+    /* font-size: 1.5rem; */
   }
 }
