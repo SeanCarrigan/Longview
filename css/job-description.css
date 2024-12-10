@@ -96,6 +96,11 @@ body {
   font-weight: bold;
 }
 
+.interested-text-box p {
+  margin: 5% 0;
+  font-size: 18px;
+}
+
 /* Apply button styling */
 .apply-button {
   display: inline-block;
