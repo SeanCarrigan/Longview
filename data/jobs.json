@@ -1,57 +1,29 @@
 [
   {
     "id": 1,
-    "title": "Controller / Director of Finance",
-    "shortDescription": "Oversee Longview’s budgeting, financial controls, and regulatory reporting ",
-    "aboutUs": "Longview Infrastructure is an integrated transmission platform. It provides a unique combination of execution capabilities and strategic capital to develop energy infrastructure to power America forward.\n\nLongview’s team has developed and executed some of the largest transmission and generation projects across the country over the last decade. Its comprehensive solutions combine experience, technical knowledge, and capital to accelerate the development of America's power grid.\n\nLongview is seeking driven and ambitious professionals ready to embrace new challenges and grow alongside our dynamic team.",
-
-    "fullDescription": "Accounting and financial controls underpin Longview’s ability to develop transmission across North America. The Controller / Director of Finance will be responsible for Longview’s budgeting and financial reporting activities, including payroll and accounts payable, budgeting, cost tracking, variance analysis, coordinating external audit and tax activities, and managing internal spend controls. Further, the position will be responsible for regulatory reporting (e.g., formula rate filings) and interaction under Longview’s relationship with its infrastructure investor.",
-
+    "title": "Project Manager / Project Director – Development",
+    "shortDescription": "Lead end-to-end development of transmission projects",
+    "aboutUs": "Longview Infrastructure is an integrated transmission platform that combines execution capabilities with strategic capital to develop energy infrastructure that powers America forward.\n\nLongview’s team has developed and executed some of the largest transmission and generation projects across the country over the last decade. Its comprehensive solutions combine experience, technical knowledge, and capital to accelerate the development of America's power grid.\n\nLongview is seeking driven and ambitious professionals ready to embrace new challenges and grow alongside our dynamic team.",
+    "fullDescription": "At Longview Infrastructure, effective project management is at the core of our success in developing and executing electric transmission projects across North America. Longview is seeking a <strong>Project Manager / Project Director - Development</strong> to lead the development of transmission facilities.",
     "roles": [
-      "Oversee the company’s financial processes and technology, including payroll, budgets, controls, payments, and accounting",
-      "Manage tax planning and compliance, including federal and state, property tax, and sales and use taxes",
-      "Support cost forecasting and budgeting and analyze financial performance",
-      "Manage the formation and interaction of subsidiaries",
-      "Manage regulatory accounting processes including formula rate filings",
-      "Innovate on financial structures for electric transmission"
+      {
+        "title": "Spearhead end-to-end project development, including:",
+        "subRoles": [
+          "Develop early-stage project proposals including technical optimization, cost estimation, assessment of project economics, and alignment with project objectives",
+          "Navigate complex permitting processes and environmental conditions, ensuring full regulatory compliance",
+          "Structure and negotiate critical project agreements"
+        ]
+      },
+      "Maintain direct oversight and responsibility for project budget schedule",
+      "Build and manage high performing teams of internal experts and external contractors across multiple disciplines",
+      "Develop and maintain strategic relationships with key stakeholders, including regulatory bodies, community leaders, utility partners, suppliers, and external contractors",
+      "Direct and participate in comprehensive market analysis to identify emerging opportunities and optimize company and project positioning"
     ],
     "aboutYou": [
-      "10+ years’ professional finance, accounting, and controlling experience, including at least 5 in power and utilities",
-      "Bachelor’s Degree in Finance, Accounting, or other quantitative discipline",
-      "Experience in FERC regulatory accounting a plus",
-      "Critical thinker – analytical and solution-focused",
-      "Entrepreneurial – identify what’s needed and get it done",
-      "Team player – helps the team and learns along the way"
-    ],
-    "whatWeOffer": [
-      "Competitive salary and bonus, commensurate with experience",
-      "Equity participation commensurate with experience ",
-      "Excellent health, dental, vision, insurance, 401(k) and generous Paid Time Off ",
-      "Work with a hard-working, high-quality, collaborative team"
-    ],
-    "link": "/jobs/project-manager.html",
-    "type": "Full-Time",
-    "location": "Chesterfield, Missouri / San Francisco, California",
-    "locationDescription": "Longview has offices in <strong>Chesterfield, Missouri and San Francisco, California</strong>. This role is expected to be in the office when not traveling for work."
-  },
-  {
-    "id": 2,
-    "title": "Project Manager / Project Director",
-    "shortDescription": "Develop transmission facilities and maintain Longview’s engineering standards ",
-    "aboutUs": "Longview Infrastructure is an integrated transmission platform. It provides a unique combination of execution capabilities and strategic capital to develop energy infrastructure to power America forward.\n\nLongview’s team has developed and executed some of the largest transmission and generation projects across the country over the last decade. Its comprehensive solutions combine experience, technical knowledge, and capital to accelerate the development of America's power grid.\n\nLongview is seeking driven and ambitious professionals ready to embrace new challenges and grow alongside our dynamic team.",
-
-    "fullDescription": "At Longview Infrastructure, efficient design is the foundation of our success in bidding, winning, developing, constructing, and owning electric transmission projects across North America. Longview is seeking a <strong> Project Manager / Project Director </strong> to play a critical role in the preparation of bids and early-stage development of transmission facilities.\n\nIn this role, you will collaborate with our Development team to design, estimate, and develop transmission facilities while maintaining Longview’s engineering standards.\n\nAs part of a rapidly growing organization in a market that has expanded exponentially in the past five years, this role offers a unique opportunity to take on meaningful challenges and drive innovation. Longview is committed to identifying ambitious, talented individuals who are eager to grow into senior leadership roles as it continues to scale.",
-
-    "roles": [
-      "Design transmission and substation projects for bids and early-stage development, including selecting and optimizing structures, conductors, pole spotting, and foundation designs",
-      "Review consultant and contractor design packages, including structure families, design criteria, substation general arrangements, equipment selection, and material/construction specifications",
-      "Collaborate with internal teams (construction, environmental, land use, etc.) as well as external consultants/contractors to identify the most effective solutions",
-      "Develop and lead project engineering teams by engaging with and selecting engineering consultants, equipment vendors, and construction contractors"
-    ],
-    "aboutYou": [
-      "5+ plus years of experience in design and engineering of high voltage transmission",
-      "Strong understanding of transmission structure design (loading trees, manufacturing and construction methods, cost optimization, and industry standard software platforms)",
-      "Bachelor’s Degree in Civil, Mechanical, or Electrical Engineering",
+      "5+ plus years of experience in managing energy infrastructure projects",
+      "Strong understanding technical concepts associated with high-voltage energy infrastructure",
+      "Experience in successfully seeing projects through design, permitting, financing, and construction",
+      "Bachelor’s Degree or higher in civil, mechanical, or electrical engineering",
       "Critical thinker – analytical and solution-focused",
       "Independent – organizes own workstream based on broad objectives",
       "Team player – looking to help the team and learn along the way"
@@ -63,7 +35,93 @@
     ],
     "link": "/jobs/project-manager.html",
     "type": "Full-Time",
-    "location": "Chesterfield, MO",
-    "locationDescription": "Chesterfield, MO"
+    "location": "Chesterfield, Missouri / San Francisco, California",
+    "locationDescription": "Longview has offices in <strong>Chesterfield, Missouri and San Francisco, California</strong>."
+  },
+  {
+    "id": 2,
+    "title": "Manager/Director, Transmission Engineering",
+    "shortDescription": "Lead transmission engineering, technical design, and supplier engagement",
+    "aboutUs": "Longview Infrastructure is an integrated transmission platform that combines execution capabilities with strategic capital to develop energy infrastructure that powers America forward.\n\nLongview’s team has developed and executed some of the largest transmission and generation projects across the country over the last decade. Its comprehensive solutions combine experience, technical knowledge, and capital to accelerate the development of America's power grid.\n\nLongview is seeking driven and ambitious professionals ready to embrace new challenges and grow alongside our dynamic team.",
+
+    "fullDescription": "At Longview Infrastructure, efficient design is at the core of our success in developing and executing electric transmission projects across North America. Longview is seeking a <strong>Manager/Director - Transmission Engineering</strong> to lead the design and engineering of transmission facilities\n\nIn this role, you will collaborate with Longview’s Development team to design, estimate, and develop transmission facilities while maintaining Longview’s engineering standards. The successful candidate will thrive in a dynamic environment where technical expertise meets business acumen.",
+
+    "roles": [
+      {
+        "title": "Directly lead the technical design of projects",
+        "subRoles": [
+          "Lead, design, and manage transmission and substation projects, including but not limited to, optimizing structures, conductors, pole spotting, and foundation designs",
+          "Review and approve consultant and contractor design packages, including but not limited to, structure families, design criteria, substation general arrangements, equipment selection, and material/construction specifications"
+        ]
+      },
+      {
+        "title": "Oversee project engineering teams, including the selection and oversight of engineering consultants, equipment vendors, and construction contractors.",
+        "subRoles": [
+          "Coordinate teams of contractors, internal expects, and suppliers to deliver a high-quality project",
+          "Maintain full accountability for overall project design",
+          "Establish and maintain engineering design standards"
+        ]
+      },
+      "Act as Longview’s main point of contact for suppliers and contractors",
+      {
+        "title": "Innovate and optimize cutting edge designs",
+        "subRoles": [
+          "Identify, evaluate, and selectively implement new technologies",
+          "Introduce and implement new tools, technologies and methodologies",
+          "Monitor industry trends to ensure Longview remains at the forefront of transmission engineering"
+        ]
+      }
+    ],
+    "aboutYou": [
+      "Highly experienced in design and engineering of high voltage transmission facilities",
+      "Strong understanding of transmission structure design (loading trees, manufacturing and construction methods, cost optimization, and industry standard software platforms)",
+      "Bachelor’s degree in civil, mechanical, or electrical engineering",
+      "Critical thinker – analytical and solution-focused",
+      "Independent – organizes own workstream based on broad objectives",
+      "Team player – looking to help the team and learn along the way"
+    ],
+    "whatWeOffer": [
+      "Competitive salary, bonus, and equity participation commensurate with experience",
+      "Excellent health, dental, vision, insurance, 401(k) and generous Paid Time Off",
+      "Opportunity to grow with a company of experienced and dedicated professionals"
+    ],
+    "link": "/jobs/project-manager.html",
+    "type": "Full-Time",
+    "location": "Chesterfield, Missouri / San Francisco, California",
+    "locationDescription": "Longview has offices in <strong>Chesterfield, Missouri and San Francisco, California</strong>."
+  },
+  {
+    "id": 3,
+    "title": "Accounting Manager / Controller",
+    "shortDescription": "Oversee Longview’s budgeting, financial controls, and regulatory reporting",
+    "aboutUs": "Longview Infrastructure is an integrated transmission platform. It provides a unique combination of execution capabilities and strategic capital to develop energy infrastructure to power America forward.\n\nLongview’s team has developed and executed some of the largest transmission and generation projects across the country over the last decade. Its comprehensive solutions combine experience, technical knowledge, and capital to accelerate the development of America's power grid.\n\nLongview is seeking driven and ambitious professionals ready to embrace new challenges and grow alongside our dynamic team.",
+
+    "fullDescription": "Accounting and financial controls underpin Longview’s ability to develop transmission across North America. Longview is seeking an <strong>Accounting Manager / Controller</strong> to lead Longview’s budgeting and financial reporting activities, including payroll and accounts payable, budgeting, cost tracking, variance analysis, coordinating external audit and tax activities, and managing internal spend controls. Further, the position will be responsible for regulatory reporting (e.g., formula rate filings) and interaction under Longview’s relationship with its infrastructure investor.",
+    "roles": [
+      "Oversee the company’s financial processes and technology, including payroll, budgets, controls, payments, and accounting",
+      "Manage tax planning and compliance, including federal and state, property tax, and sales and use taxes",
+      "Support cost forecasting and budgeting and analyze financial performance",
+      "Manage the formation and interaction of subsidiaries",
+      "Manage regulatory accounting processes including formula rate filings",
+      "Innovate on financial structures for electric transmission"
+    ],
+    "aboutYou": [
+      "5+ years’ professional finance, accounting, and controlling experience, including at least 5 in power and utilities",
+      "Bachelor’s Degree in finance, accounting, or other quantitative discipline",
+      "Experience in FERC regulatory accounting is a strong plus",
+      "Critical thinker – analytical and solution-focused",
+      "Entrepreneurial – identify what’s needed and get it done",
+      "Team player – helps the team and learns along the way"
+    ],
+    "whatWeOffer": [
+      "Competitive salary and bonus, commensurate with experience ",
+      "Equity participation commensurate with experience",
+      "Excellent health, dental, vision, insurance, 401(k) and generous Paid Time Off",
+      "Work with a hard-working, high-quality, collaborative team"
+    ],
+    "link": "/jobs/project-manager.html",
+    "type": "Full-Time",
+    "location": "Chesterfield, Missouri / San Francisco, California",
+    "locationDescription": "Longview has offices in <strong>Chesterfield, Missouri and San Francisco, California</strong>. This role is expected to be in the office when not traveling for work."
   }
 ]

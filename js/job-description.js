@@ -28,10 +28,28 @@ document.addEventListener('DOMContentLoaded', () => {
           // Render roles as an unordered list
           const rolesList = document.getElementById('job-roles');
           rolesList.innerHTML = ''; // Clear any existing content
+
           job.roles.forEach((role) => {
             const listItem = document.createElement('li');
-            listItem.textContent = role;
-            rolesList.appendChild(listItem);
+
+            if (typeof role === 'string') {
+              // If the role is a string, render it as a single list item
+              listItem.textContent = role;
+            } else if (typeof role === 'object' && role.subRoles) {
+              // If the role has sub-roles, render the main role with a nested list
+              listItem.textContent = role.title;
+
+              const subList = document.createElement('ul'); // Create a sub-list
+              role.subRoles.forEach((subRole) => {
+                const subListItem = document.createElement('li');
+                subListItem.textContent = subRole;
+                subList.appendChild(subListItem);
+              });
+
+              listItem.appendChild(subList); // Append the sub-list to the main list item
+            }
+
+            rolesList.appendChild(listItem); // Append the main list item to the roles list
           });
 
           // Render Who You Are as an unordered list

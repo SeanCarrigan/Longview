@@ -96,6 +96,17 @@ body {
   font-weight: bold;
 }
 
+/* Style for nested (sublist) items */
+ul#job-roles ul {
+  list-style-type: circle; /* Change bullet style for sublist */
+  margin-left: 40px; /* Indent sublist further */
+}
+
+ul#job-roles ul > li {
+  margin: 10px;
+}
+
+
 .interested-text-box p {
   margin: 5% 0;
   font-size: 1rem;
