@@ -51,7 +51,7 @@
 //             $mail->Port = 587;
 //             $mail->SMTPAuth = true;
 //             $mail->Username = 'sean.t.carrigan@gmail.com';
-//             $mail->Password = 'twtm jbed sozc lmvv'; // Use an app-specific password for Gmail
+//             $mail->Password = ''; // Use an app-specific password for Gmail
 //             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 
 //             // Recipients
