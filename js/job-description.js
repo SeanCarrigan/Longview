@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (jobId) {
     // Fetch the jobs data
-    fetch('../data/jobs.json')
+    fetch(`../data/jobs.json?timestamp=${new Date().getTime()}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error('Failed to load jobs data');

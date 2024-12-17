@@ -10,9 +10,7 @@ body {
 .header {
   position: fixed;
   margin-bottom: 2rem;
-  header {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
-  }
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .menu-toggle {
@@ -98,14 +96,13 @@ body {
 
 /* Style for nested (sublist) items */
 ul#job-roles ul {
-  list-style-type: circle; /* Change bullet style for sublist */
-  margin-left: 40px; /* Indent sublist further */
+  list-style-type: circle;
+  margin-left: 40px;
 }
 
 ul#job-roles ul > li {
   margin: 10px;
 }
-
 
 .interested-text-box p {
   margin: 5% 0;
